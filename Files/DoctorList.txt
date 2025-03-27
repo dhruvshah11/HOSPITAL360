@@ -1,0 +1,137 @@
+DID20000
+Dr. Rajesh Kumar
+Male
+0111******
+MEDICINE
+26/09/2024
+Drrkumar
+
+DID20002
+Dr. Priya Sharma
+Female
+0111******
+PSYCHIATRY
+26/09/2024
+Drpsharma
+
+DID20005
+Dr. Arun Patel
+Male
+0111******
+ORTHOPEDICS
+26/09/2024
+Drapatel
+
+DID20009
+Dr. Neha Gupta
+Female
+0111******
+SURGERY
+26/09/2024
+Drngupta
+
+DID20004
+Dr. Amit Singh
+Male
+4679797
+NEUROSURGERY
+5646
+Drasingh
+
+DID200010
+Dr. Sanjay Mehta
+Male
+45797646
+ORTHOPEDICS
+35676
+Drsmehta
+
+DID20016
+Dr. Kavita Reddy
+Female
+97618
+PSYCHIATRY
+27/09/2024
+Drkreddy
+
+DID20017
+Dr. Meera Iyer
+Female
+ANESTHESIOLOGY
+29/09/2024
+Drmiyer
+
+DID200116
+Dr. Vikram Malhotra
+Male
+0144658
+NEUROSURGERY
+29/09/2024
+Drvmalhotra
+
+DID200163
+Dr. Rahul Verma
+Male
+0147998
+ONCOLOGIST
+30/09/2024
+Drrverma
+
+DID200120
+Dr. Anand Desai
+Male
+458
+MEDICINE
+2/5/23
+Dradesai
+
+DID200144
+Dr. Suresh Joshi
+Male
+01789646
+NEUROSURGERY
+10-02-2024
+Drsjoshi
+
+DID200169
+Dr. Anjali Shah
+Female
+0165895
+ANESTHESIOLOGY
+02-10-2024
+Drashah
+
+DID200183
+Dr. Deepa Menon
+Female
+01479522
+MEDICINE
+02-10-2024
+Drdmenon
+
+DID200114
+Dr. Arjun Nair
+Male
+017976
+CARDIOLOGY
+02-10-2024
+Dranair
+
+DID200115
+Dr. Karthik Rao
+Male
+013346
+SURGERY
+02-10-2024
+Drkrao
+
+
+DID20010
+dhruv
+8376912003
+Male
+SURGERY
+15/01/2005
+yes
+151903
+

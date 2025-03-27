@@ -1,0 +1,239 @@
+package Frames;
+
+import java.lang.*;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import Classes.*;
+
+public class Menu extends JFrame implements MouseListener,ActionListener{
+	JLabel nameLabel, titleLabel, imgLabel, userLabel, sumLabel, tAddLabel, tDisLabel, tDrLabel;
+	JButton npBtn, dpBtn, pInfoBtn, pUpBtn, drInfoBtn, lgtBtn, contBtn, bookApp, viewApp;
+	Color color1, color2, color3;
+	ImageIcon img, icon;
+	Font font1, font2, font3;
+	JPanel panel;
+	
+	public Menu(){
+		super("Hospital-360");
+		this.setSize(900,600);
+		icon = new ImageIcon("images/icon.png");
+		this.setIconImage(icon.getImage());
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLocationRelativeTo(null); 
+		
+		color1 = new Color(70, 150, 180); // Calming blue
+		color2 = new Color(100, 180, 140); // Soft healing green
+		color3 = new Color(245, 250, 255); // Clean medical white
+		/*this.setBackground(color1);*/
+		
+		font1 = new Font("Ubuntu",Font.BOLD, 30);
+		font2 = new Font("Ubuntu",Font.PLAIN, 20);
+		font3 = new Font("Ubuntu",Font.PLAIN, 15);
+		
+		panel = new JPanel();
+		panel.setLayout(null);
+		
+		nameLabel = new JLabel("Hospital-360");
+		nameLabel.setBounds(380,25,250,50);
+		nameLabel.setFont(font1);
+		panel.add(nameLabel);
+		
+		npBtn = new JButton("ADD NEW PATIENT");
+		npBtn.setBounds(100,120,175,40);
+		npBtn.setBackground(Color.BLACK);
+		npBtn.setForeground(Color.WHITE);
+		npBtn.addMouseListener(this);
+		npBtn.addActionListener(this);
+		panel.add(npBtn);
+		
+		dpBtn = new JButton("DISCHARGE PATIENT");
+		dpBtn.setBounds(100,170,175,40);
+		dpBtn.setBackground(Color.BLACK);
+		dpBtn.setForeground(Color.WHITE);
+		dpBtn.addMouseListener(this);
+		dpBtn.addActionListener(this);
+		panel.add(dpBtn);
+		
+		pInfoBtn = new JButton("ALL PATIENT INFO");
+		pInfoBtn.setBounds(100,220,175,40);
+		pInfoBtn.setBackground(Color.BLACK);
+		pInfoBtn.setForeground(Color.WHITE);
+		pInfoBtn.addMouseListener(this);
+		pInfoBtn.addActionListener(this);
+		panel.add(pInfoBtn);
+		
+		pUpBtn = new JButton("UPDATE PATIENT");
+		pUpBtn.setBounds(100,270,175,40);
+		pUpBtn.setBackground(Color.BLACK);
+		pUpBtn.setForeground(Color.WHITE);
+		pUpBtn.addMouseListener(this);
+		pUpBtn.addActionListener(this);
+		panel.add(pUpBtn);
+		
+		drInfoBtn = new JButton("DOCTOR INFO");
+		drInfoBtn.setBounds(100,320,175,40);
+		drInfoBtn.setBackground(Color.BLACK);
+		drInfoBtn.setForeground(Color.WHITE);
+		drInfoBtn.addMouseListener(this);
+		drInfoBtn.addActionListener(this);
+		panel.add(drInfoBtn);
+		
+		lgtBtn = new JButton("LOGOUT");
+		lgtBtn.setBounds(100,380,175,40);
+		lgtBtn.setBackground(Color.BLACK);
+		lgtBtn.setForeground(Color.WHITE);
+		lgtBtn.addMouseListener(this);
+		lgtBtn.addActionListener(this);
+		panel.add(lgtBtn);
+		
+		bookApp = new JButton("Book Appoinments");
+		bookApp.setBounds(690,460,150,20);
+		bookApp.setBackground(color1);
+		bookApp.setBorder(null);
+		bookApp.addMouseListener(this);
+		bookApp.addActionListener(this);
+		panel.add(bookApp);
+
+		viewApp = new JButton("View Appoinments");
+		viewApp.setBounds(690,480,150,20);
+		viewApp.setBackground(color1);
+		viewApp.setBorder(null);
+		viewApp.addMouseListener(this);
+		viewApp.addActionListener(this);
+		panel.add(viewApp);
+
+		contBtn = new JButton("View Prescriptions");
+		contBtn.setBounds(690,500,150,20);
+		contBtn.setBackground(color1);
+		contBtn.setBorder(null);
+		contBtn.addMouseListener(this);
+		contBtn.addActionListener(this);
+		panel.add(contBtn);
+		
+		img = new ImageIcon("images/menu.png");
+		
+		imgLabel = new JLabel(img);
+		//imgLabel.setBounds(500,150,256,256);
+		imgLabel.setBounds(500,150,256,256);
+		panel.add(imgLabel);
+		
+		titleLabel = new JLabel("“Health is not valued till sickness comes”");
+		titleLabel.setBounds(270,460,400,40);
+		titleLabel.setFont(font2);
+		panel.add(titleLabel);
+		panel.add(titleLabel);
+		
+		userLabel = new JLabel("Welcome back, admin");
+		userLabel.setBounds(700,90,130,40);
+		panel.add(userLabel);
+		
+		
+		
+		panel.setBackground(color1);
+		this.add(panel);
+	}
+	public void mouseClicked(MouseEvent me){}
+	public void mousePressed(MouseEvent me){}
+	public void mouseReleased(MouseEvent me){}
+	public void mouseEntered(MouseEvent me){
+		if(me.getSource() == npBtn){
+			npBtn.setBackground(color2);
+			npBtn.setForeground(Color.WHITE);
+		} else if(me.getSource() == lgtBtn){
+			lgtBtn.setBackground(Color.RED);
+			lgtBtn.setForeground(Color.WHITE);
+		} else if(me.getSource() == dpBtn){
+			dpBtn.setBackground(color2);
+			dpBtn.setForeground(Color.WHITE);
+		} else if(me.getSource() == pInfoBtn){
+			pInfoBtn.setBackground(color2);
+			pInfoBtn.setForeground(Color.WHITE);
+		} else if(me.getSource() == pUpBtn){
+			pUpBtn.setBackground(color2);
+			pUpBtn.setForeground(Color.WHITE);
+		} else if(me.getSource() == drInfoBtn){
+			drInfoBtn.setBackground(color2);
+			drInfoBtn.setForeground(Color.WHITE);
+		} 
+	}
+	
+	public void mouseExited(MouseEvent me){
+		if(me.getSource() == npBtn){
+			npBtn.setBackground(color2);
+			npBtn.setForeground(color3);
+		} else if(me.getSource() == lgtBtn){
+			lgtBtn.setBackground(color2);
+			lgtBtn.setForeground(color3);
+		} else if(me.getSource() == dpBtn){
+			dpBtn.setBackground(color2);
+			dpBtn.setForeground(color3);
+		}  else if(me.getSource() == pInfoBtn){
+			pInfoBtn.setBackground(color2);
+			pInfoBtn.setForeground(color3);
+		} else if(me.getSource() == pUpBtn){
+			pUpBtn.setBackground(color2);
+			pUpBtn.setForeground(color3);
+		} else if(me.getSource() == drInfoBtn){
+			drInfoBtn.setBackground(color2);
+			drInfoBtn.setForeground(color3);
+		}
+	}
+	
+	public void actionPerformed(ActionEvent ae){
+		String command = ae.getActionCommand();
+		if (ae.getSource() == npBtn) {
+			PList pl = new PList();
+			AddPatient ap = new AddPatient(pl);
+			ap.setVisible(true);
+			this.setVisible(false);
+        } else if (ae.getSource() == dpBtn) {
+			PtDischarge pd = new PtDischarge();
+			pd.setVisible(true);
+			this.setVisible(false);
+        } else if (ae.getSource() == pUpBtn) {
+			UpPatient up = new UpPatient();
+			up.setVisible(true);
+			this.setVisible(false);
+		}else if (ae.getSource() == pInfoBtn) {
+			PInfo pi = new PInfo();
+			pi.setVisible(true);
+			this.setVisible(false);
+		}
+		else if (ae.getSource() == drInfoBtn) {
+			DoctorList dl = new DoctorList();
+			dl.setVisible(true);
+			this.setVisible(false);
+		} else if (ae.getSource() == contBtn) {
+			PrescriptionView co = new PrescriptionView();
+			co.setVisible(true);
+			this.setVisible(false);
+		}
+		else if (ae.getSource() == bookApp) {
+			AppointmentList al = new AppointmentList();
+            AppointmentFrame co = new AppointmentFrame(al); 
+			co.setVisible(true);
+			this.setVisible(false);
+		}
+		else if (ae.getSource() == viewApp) {
+            AppointmentList al = new AppointmentList();
+            ViewAppointments frame = new ViewAppointments(al);
+            frame.setVisible(true);
+            this.setVisible(false);
+        }
+		 else if (ae.getSource() == lgtBtn) {
+			int dialog = JOptionPane.YES_NO_OPTION;
+			int result = JOptionPane.showConfirmDialog(this, "Are you sure to Logout?", "Logout", dialog);
+			if(result == 0){
+				JOptionPane.showMessageDialog(this, "Logout Successful!");
+				Login li = new Login();
+				li.setVisible(true);
+				this.setVisible(false);
+			} else{
+				//kicu hbe na
+			}
+					
+		}
+	}
+		
+}
